@@ -1,10 +1,5 @@
-const animais = document.getElementById('animais');
-console.log(animais);
+const itensmenu = document.querySelectorAll('.menu a');
 
-const gridSection = document.getElementsByClassName('grid-section');
-console.log(gridSection);
-
-const primeiraLi = document.querySelector('li');
-console.log(primeiraLi)
-
-cont linksInternos = document.querySelector('[href^="#"]');
+itensmenu.forEach((item) => {
+    item.classList.add('ativo');
+});
